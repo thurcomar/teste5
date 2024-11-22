@@ -1,0 +1,175 @@
+/* Estilo Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #c2c2c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 50px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 1300px;
+}
+
+h1 {
+  color: #6f42c1;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 60px;
+  font-weight: 400;
+}
+
+/* Botões */
+button {
+  padding: 14px 24px;
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.0rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5a32a3;
+}
+
+.btn-add, .btn-export {
+  width: 210px;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Modal de Adicionar Funcionário */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: white;
+  padding: 40px;
+  border-radius: 8px;
+  width: 600px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.modal h2 {
+  color: #6f42c1;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.modal input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-buttons button {
+  width: 48%;
+}
+
+.close-btn {
+  background-color: #e74c3c;
+}
+
+.close-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Tabela de Funcionários */
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 50px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+  padding: 18px 30px;
+  text-align: left;
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 1.1rem;
+}
+
+table th {
+  background-color: #6f42c1;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+/* Botão de Reset */
+.btn-reset {
+  background-color: #5a32a3;
+  color: white;
+  width: 210px;
+  font-size: 1rem;
+  margin-bottom: 40px;
+}
+
+.btn-reset:hover {
+  background-color: #5a32a3;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
